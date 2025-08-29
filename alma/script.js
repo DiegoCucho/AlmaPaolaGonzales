@@ -176,22 +176,20 @@ function setupCursor() {
     }
 }
 
+// Calcular días juntos
 function calculateDaysTogether() {
-  const startDate = new Date('2025-07-25T00:00:00'); 
-  const today = new Date();
+    // Fecha de inicio de la relación (ajusta esta fecha)
+    const startDate = new Date('2025-07-25');
+    const today = new Date();
+    const diffTime = Math.abs(today - startDate);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-  // Quitar horas para evitar desfases
-  today.setHours(0,0,0,0);
-  startDate.setHours(0,0,0,0);
-
-  const diffTime = today - startDate;
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-  const counter = document.getElementById('days-together');
-  if (counter) {
-    animateNumber(counter, 0, diffDays, 2000);
-  }
+    const counter = document.getElementById('days-together');
+    if (counter) {
+        animateNumber(counter, 0, diffDays, 2000);
+    }
 }
+
 
 // Asegurar que se ejecute cuando cargue el DOM
 document.addEventListener("DOMContentLoaded", calculateDaysTogether);

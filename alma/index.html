@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños Mi Amor! 🎂💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Partículas de fondo -->
+    <div id="particles-container"></div>
+
+    <!-- Confeti -->
+    <div id="confetti-container"></div>
+
+    <!-- Control de música -->
+    <div class="music-control" id="music-control">
+        <div class="music-icon">🎵</div>
+        <span>Música</span>
+    </div>
+
+    <!-- Contador de días juntos -->
+    <div class="days-counter">
+        <span >37</span>
+        <small>días juntos</small>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="floating-hearts"></div>
+            <div class="birthday-balloons">
+                <div class="balloon balloon-1">🎈</div>
+                <div class="balloon balloon-2">🎈</div>
+                <div class="balloon balloon-3">🎈</div>
+                <div class="balloon balloon-4">🎈</div>
+                <div class="balloon balloon-5">🎈</div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="birthday-cake" id="birthday-cake">
+                <div class="cake-base">🎂</div>
+                <div class="candles">
+                    <div class="candle">🕯️</div>
+                    <div class="candle">🕯️</div>
+                    <div class="candle">🕯️</div>
+                </div>
+                <div class="cake-message">¡Sopla las velas!</div>
+            </div>
+            
+            <h1 class="main-title">
+                <span class="title-line">¡Feliz Cumpleaños</span>
+                <span class="title-line special">Mi Amor!</span>
+                <span class="date">1 de Septiembre 🎉</span>
+            </h1>
+            
+            <div class="hero-message">
+                <p class="love-quote">"Hoy celebramos no solo tu cumpleaños, sino cada momento mágico que hemos vivido juntos. Eres mi regalo más preciado." 💝</p>
+            </div>
+            
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="startCelebration()">
+                    🎊 ¡Comenzar la Celebración!
+                </button>
+                <button class="btn-secondary" onclick="playBirthdaySong()">
+                    🎵 Cantar Las Mañanitas
+                </button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+            <span>Desliza para más sorpresas</span>
+        </div>
+    </section>
+
+    <!-- Sección de Deseos de Cumpleaños -->
+    <section class="birthday-wishes" id="birthday-wishes">
+        <div class="container">
+            <h2 class="section-title">Mis Deseos para Ti 🌟</h2>
+            
+            <div class="wishes-grid">
+                <div class="wish-card" data-wish="1">
+                    <div class="wish-icon">🌈</div>
+                    <h3>Que todos tus sueños se cumplan</h3>
+                    <p>Que este nuevo año de vida esté lleno de colores, aventuras y momentos mágicos que te hagan sonreír cada día, junto a mi lado :3.</p>
+                </div>
+                
+                <div class="wish-card" data-wish="2">
+                    <div class="wish-icon">💫</div>
+                    <h3>Que brilles más que las estrellas</h3>
+                    <p>Porque tu luz ilumina mi mundo y mereces brillar con toda la intensidad de tu hermosa alma jsjs .</p>
+                </div>
+                
+                <div class="wish-card" data-wish="3">
+                    <div class="wish-icon">🦋</div>
+                    <h3>Que veas tu belleza como una mariposa</h3>
+                    <p>Que como una mariposa veas lo hermosa que eres y no te menosprecies, ya que las mariposas no pueden ver lo hermosa que son sus alas, igual sos vos.</p>
+                </div>
+                
+                <div class="wish-card" data-wish="4">
+                    <div class="wish-icon">🌸</div>
+                    <h3>Que florezcas como en primavera</h3>
+                    <p>Que cada día traigas nueva belleza al mundo, tal como lo haces conmigo cada momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline de Cumpleaños Especiales -->
+    <section class="birthday-timeline" id="timeline">
+        <div class="container">
+            <h2 class="section-title">Nuestros Cumpleaños Juntos 🎂</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date"> 1 Septiembre 2025</div>
+                        <h3>Tu Primer Cumpleaños Conmigo</h3>
+                        <p>El día que descubrí lo especial que es celebrar contigo, me gustaria ver como reaccionarias al ver todo esto, aunque como no puedo darte regalo fisicamente, nose... rosas, chocolates, etc...</p>
+                        <div class="timeline-image">🎁</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <img src="img/alma .jpg" alt="imagen">
+                        <p>Espero sigas asi de feliz todos los años, ese es mi trabajo a partir de ahora..., que suerte tengo de tenerte a mi lado mi amor.</p>
+                        <div class="timeline-image">💖</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Futuro</div>
+                        <h3>Todos los Cumpleaños que Vienen</h3>
+                        <p>Dejame estar a tu lado en cada cumpleaños futuro, quiero quedarme a tu lado por siempre,
+                             celebrando tu vida y el amor que te tengo, que con el tiempo crece más fuerte cada día.</p>
+                        <div class="timeline-image">♾️</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Recuerdos -->
+    <section class="memory-gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Momentos que algun día quiero pasar con vos 📸</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal(0)">
+                    <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nuestro primer viaje">
+                    <div class="gallery-overlay">
+                        <h4>Nuestro Primer Viaje</h4>
+                        <p>Quiero algun día viajar a tu lado, aunque eso sera cuando te robe, para traerte conmigo a Perú...</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(1)">
+                    <img src="/img/cena.avif" alt="Cena romántica">
+                    <div class="gallery-overlay">
+                        <h4>Cena Bajo las Estrellas</h4>
+                        <p>La noche perfecta, solo tú y yo</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(2)">
+                    <img src="https://images.pexels.com/photos/1024967/pexels-photo-1024967.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Paseo en la playa">
+                    <div class="gallery-overlay">
+                        <h4>Caminando en la Playa</h4>
+                        <p>Descalzos por la arena, hablando de sueños</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(3)">
+                    <img src="https://images.pexels.com/photos/2072179/pexels-photo-2072179.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Atardecer">
+                    <div class="gallery-overlay">
+                        <h4>Atardecer Perfecto</h4>
+                        <p>Cuando el cielo se pinte de colores</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(4)">
+                    <img src="https://images.pexels.com/photos/1024981/pexels-photo-1024981.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Momentos divertidos">
+                    <div class="gallery-overlay">
+                        <h4>Risas y Diversión</h4>
+                        <p>Algun día reíremos hasta que nos duela el estómago, pero siempre a tu lado</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(5)">
+                    <img src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Picnic">
+                    <div class="gallery-overlay">
+                        <h4>Picnic Dominical</h4>
+                        <p>Los domingos perfectos empiezan contigo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Galería -->
+    <div class="modal" id="gallery-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+            <div class="modal-nav">
+                <button onclick="prevImage()">❮</button>
+                <button onclick="nextImage()">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Razones por las que te amo -->
+    <section class="love-reasons" id="reasons">
+        <div class="container">
+            <h2 class="section-title">1000 Razones para Amarte 💕</h2>
+            <p class="section-subtitle">Pero aquí van mis favoritas...</p>
+            
+            <div class="reasons-grid">
+                <div class="reason-card" data-reason="1">
+                    <div class="reason-icon">😊</div>
+                    <h3>Tu Sonrisa</h3>
+                    <p>Iluminas mi mundo cada vez que sonríes. Es mi dosis diaria de felicidad y la razón por la que amo despertar cada mañana.</p>
+                </div>
+                
+                <div class="reason-card" data-reason="2">
+                    <div class="reason-icon">💖</div>
+                    <h3>Tu Corazón</h3>
+                    <p>Tienes el corazón más puro y hermoso que he conocido. Tu bondad y ternura me enamoran más cada día.</p>
+                </div>
+                
+                <div class="reason-card" data-reason="3">
+                    <div class="reason-icon">🌟</div>
+                    <h3>Tu Forma de Ser</h3>
+                    <p>Eres única, especial, perfecta tal como eres. No cambiaría nada de ti porque eres exactamente lo que mi alma necesitaba.</p>
+                </div>
+                
+                <div class="reason-card" data-reason="4">
+                    <div class="reason-icon">🎵</div>
+                    <h3>Tu Risa</h3>
+                    <p>Ese sonido mágico que hace que todo valga la pena. Tu risa es mi melodía favorita y mi medicina para cualquier mal día.</p>
+                </div>
+                
+                <div class="reason-card" data-reason="5">
+                    <div class="reason-icon">👀</div>
+                    <h3>Cómo me Miras</h3>
+                    <p>En tus ojos veo el futuro, veo el hogar, veo todo lo que necesito. Tu mirada es mi lugar seguro en este mundo.</p>
+                </div>
+                
+                <div class="reason-card" data-reason="6">
+                    <div class="reason-icon">🌙</div>
+                    <h3>Nuestros Sueños</h3>
+                    <p>Compartimos la misma visión del futuro, los mismos sueños por cumplir. Juntos podemos conquistar el mundo entero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensajes Sorpresa -->
+    <section class="surprise-messages" id="messages">
+        <div class="container">
+            <h2 class="section-title">Mensajes Especiales de Cumpleaños 🎁</h2>
+            <p class="section-subtitle">Haz clic en cada regalo para descubrir sorpresas</p>
+            
+            <div class="messages-grid">
+                <div class="message-box locked" data-message="1" onclick="unlockMessage(1)">
+                    <div class="gift-box">🎁</div>
+                    <h3>Regalo Sorpresa #1</h3>
+                    <p class="hint">Una promesa especial te espera aquí</p>
+                    <div class="message-content">
+                        <h4>Mi Promesa de Cumpleaños</h4>
+                        <p>Te prometo que este nuevo año de tu vida será el más hermoso que hayas vivido, mi objetivo es hacerte la chica mas feliz del mundo...</p>
+                    </div>
+                </div>
+                
+                <div class="message-box locked" data-message="2" onclick="unlockMessage(2)">
+                    <div class="gift-box">🎀</div>
+                    <h3>Regalo Sorpresa #2</h3>
+                    <p class="hint">Descubre lo que planean para nosotros</p>
+                    <div class="message-content">
+                        <h4>Nuestras Aventuras Futuras</h4>
+                        <p>He estado planeando sorpresas increíbles para ti: viajes, cenas bajo las estrellas, aventuras que recordaremos para siempre, tu cumpleaños es solo el comienzo de un año lleno de momentos únicos.</p>
+                    </div>
+                </div>
+                
+                <div class="message-box locked" data-message="3" onclick="unlockMessage(3)">
+                    <div class="gift-box">💝</div>
+                    <h3>Regalo Sorpresa #3</h3>
+                    <p class="hint">El regalo más grande de todos</p>
+                    <div class="message-content">
+                        <h4>Mi Amor Eterno</h4>
+                        <p>El regalo más grande soy yo xD ok no, o si?, pero te prometo serte leal, y amarte por el resto de mi vida y obviamente cuando nos encontremos te consentire como una niña pequeña, con chocolates, peluche, flores aunque nunca regale flores a alguien asi que talvez me ponga muy nervioso, como me gustaria estar a tu lado...</p>
+                    </div>
+                </div>
+                
+                <div class="message-box locked" data-message="4" onclick="unlockMessage(4)">
+                    <div class="gift-box">🌹</div>
+                    <h3>Regalo Sorpresa #4</h3>
+                    <p class="hint">Una declaración desde el corazón</p>
+                    <div class="message-content">
+                        <h4>Eres Mi Todo</h4>
+                        <p>En tu cumpleaños quiero que sepas que eres mi sol, mi luna, mis estrellas, no hay palabras suficientes para expresar lo mucho que significas para mí.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carta de Amor Final -->
+    <section class="love-letter" id="letter">
+        <div class="container">
+            <div class="letter-content">
+                <h2 class="letter-title">Carta de Cumpleaños para Mi Amor 💌</h2>
+                
+                <div class="letter-text">
+                    <p class="letter-date">1 de Septiembre, 2025</p>
+                    
+                    <p>Mi amor hermoso,</p>
+                    
+                    <p>Hoy es tu día especial, pero para mí, cada día contigo es una celebración, mi corazón se llena de una felicidad inmensa al pensar en todo lo que hemos vivido juntos(aunque fue corto pero contigo me parecio, que paso mucho mas tiempo) y en todo lo que nos espera.</p>
+                    
+                    <p>Recuerdo el dia en que te conoc, desde entonces, cada amanecer tiene más sentido, cada atardecer es más hermoso, y cada momento a tu lado es un regalo que atesoro en lo más profundo de mi alma.</p>
+                    
+                    <p>En tu cumpleaños quiero que sepas que eres la persona más increíble que he conocido, tu bondad, tu humor, tu forma única de ver la vida... todo en ti me enamora más cada día, esquee aaaa eres muy perfecta tal como eres, y me siento el más afortunado del mundo por tenerte a mi lado.</p>
+                    
+                    <p>Este nuevo año de tu vida será extraordinario, lo prometo, porque estaré ahí para celebrar cada cosa buena que haces :3, para consolarte en cada dificultad, para reír contigo en los momentos felices y algun día abrazarte cuando necesites sentirte segura.</p>
+                    
+                    <p>Que este cumpleaños sea el inicio de 365 días llenos de amor y todos los años mas que nos esperan aun estamos un poco más de un mes pero quiero pasar toda mi vida contigo, aventuras, risas y sueños cumplidos, que cada día te recuerde lo especial que eres y lo mucho que eres amada.</p>
+                    
+                    <p class="letter-signature">
+                        Con todo mi amor eterno,<br>
+                        <span class="signature">Tu novio que te ama infinitamente ❤️</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-message">
+                    <h3>¡Feliz Cumpleaños Mi Vida! 🎂</h3>
+                    <p>Esta página fue creada con todo mi amor, pensando en cada detalle para ti, espero que te haya gustado tanto como yo disfruté haciéndola. Te re amo, más de lo que las palabras pueden expresar, y ya en unos años, cada que despierto, en vez de mirar el telefono, psss te mire a ti :3</p>
+                </div>
+                
+                <div class="footer-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="love-percentage">100</span>
+                        <span class="stat-label">% de Amor</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="happiness-level">∞</span>
+                        <span class="stat-label">Nivel de Felicidad</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">Amor de mi Vida</span>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>💕 Hecho con amor infinito para la persona más especial del mundo 💕</p>
+                    <p class="copyright">© 2025 - Para Mi Princesa en su Día Especial</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
